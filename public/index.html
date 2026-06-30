@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Social App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1>MiniSocial</h1>
+            <div id="logged-in-user">Logged in as: <strong>@alice</strong></div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <aside class="sidebar">
+            <h3>Discover Creators</h3>
+            <div class="profile-card" id="profile-bob">
+                <p><strong>@bob</strong> (Bob Jones)</p>
+                <p class="stats"><span id="bob-followers">0</span> Followers</p>
+                <button onclick="toggleFollow(2)">Follow</button>
+            </div>
+            <div class="profile-card" id="profile-charlie">
+                <p><strong>@charlie</strong> (Charlie Brown)</p>
+                <p class="stats"><span id="charlie-followers">0</span> Followers</p>
+                <button onclick="toggleFollow(3)">Follow</button>
+            </div>
+        </aside>
+
+        <section class="feed">
+            <div class="create-post">
+                <textarea id="post-input" placeholder="What's on your mind?"></textarea>
+                <button onclick="createPost()">Post</button>
+            </div>
+
+            <div id="posts-container">
+                </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

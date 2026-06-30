@@ -1,0 +1,23 @@
+{
+  "name": "codealpha-social-media-platform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashrithba01/CodeAlpha-Social-Media-Platform.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashrithba01/CodeAlpha-Social-Media-Platform/issues"
+  },
+  "homepage": "https://github.com/ashrithba01/CodeAlpha-Social-Media-Platform#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

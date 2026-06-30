@@ -1,0 +1,112 @@
+:root {
+    --primary: #1da1f2;
+    --bg: #f5f8fa;
+    --border: #e6ecf0;
+    --text: #14171a;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+h1 { color: var(--primary); margin: 0; font-size: 24px; }
+
+.main-container {
+    max-width: 900px;
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    height: fit-content;
+}
+
+.profile-card {
+    border-bottom: 1px solid var(--border);
+    padding: 10px 0;
+}
+.profile-card:last-child { border: none; }
+
+.stats { font-size: 13px; color: #657786; }
+
+button {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+button.following { background: #657786; }
+
+.feed { flex: 2; }
+
+.create-post {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 60px;
+    border: none;
+    resize: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.post-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    margin-bottom: 15px;
+}
+
+.post-header { font-weight: bold; margin-bottom: 8px; }
+
+.post-actions {
+    margin-top: 10px;
+    border-top: 1px solid var(--border);
+    padding-top: 8px;
+}
+
+.like-btn { background: none; color: #657786; padding: 0; margin-right: 15px;}
+.like-btn.liked { color: #e0245e; }
+
+.comment-section { margin-top: 10px; background: #f8f9fa; padding: 10px; border-radius: 8px; }
+.comment { font-size: 14px; margin-bottom: 5px; }
+.comment-input-container { display: flex; gap: 5px; margin-top: 8px; }
+.comment-input-container input { flex: 1; border: 1px solid var(--border); border-radius: 4px; padding: 4px; }
